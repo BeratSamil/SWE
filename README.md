@@ -1,1 +1,1 @@
-The Projects that we made during erasmus+ lessons.
+The Projects that we made during programming lessons.
