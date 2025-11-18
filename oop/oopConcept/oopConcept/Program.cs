@@ -23,8 +23,11 @@ namespace OOP_in_Csharp
             Computer comp1 = new("alfa", "10.0.0.23", "Windows 11");
             Console.WriteLine(comp1._BIOSname);
 
+            
+
             Computer comp2 = new("excalibur", "10.0.0.24", "Pop_OS! 22.04");
-            Console.WriteLine(comp2._BIOSname);
+            //Console.WriteLine(comp2._BIOSname);
+            Console.WriteLine("{0},{1},{2}", comp2._BIOSname, comp2._ipadress, comp2._OS);
         }
     }
 }
