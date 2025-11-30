@@ -7,12 +7,14 @@ namespace OOP_in_Csharp
         private string _BIOSname;
         private string _ipadress;
         private string _OS;
+        public static int ctr = 0;
 
         public Computer(string bn, string ip, string os)
         {
             _BIOSname = bn;
             _ipadress = ip;
             _OS = os;
+            ctr += 1;
         }
 
         public string BiosName
@@ -23,7 +25,7 @@ namespace OOP_in_Csharp
 
         public string IpAdress
         {
-            get {return _ipadress;}
+            get { return _ipadress; }
             set { _ipadress = value; }
         }
 
@@ -52,7 +54,7 @@ namespace OOP_in_Csharp
             List<Computer> listComp = new List<Computer>();
             int numOfComp = 5;
 
-            
+
             for (int i = 0; i < numOfComp; i++)
             {
                 Computer comp = new Computer("comp" + i.ToString(), "10.0.20." + i.ToString(), "Win10");
@@ -64,6 +66,8 @@ namespace OOP_in_Csharp
             {
                 Console.WriteLine("{0} {1} {2}", listComp[i].BiosName, listComp[i].IpAdress, listComp[i].OS);
             }
+
+            Console.WriteLine("We ave {0} computers in our Network.",Computer.ctr);
         }
     }
 
