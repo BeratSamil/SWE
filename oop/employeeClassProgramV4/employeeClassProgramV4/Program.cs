@@ -95,6 +95,8 @@ namespace employeeClassProgram
 
 
             Employee.showEmp(employeeList);
+
+            
             Console.WriteLine("We have {0} employees in our company", Employee.ctr);
         }
     }
