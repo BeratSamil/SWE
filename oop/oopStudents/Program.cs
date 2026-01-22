@@ -10,7 +10,7 @@ public class Student
     private string _faculty;
     private int _grade;
     public static int countr = 0;
-
+    public string _studentID;
 
 
     static int getNum()
@@ -18,6 +18,14 @@ public class Student
         Random random = new Random();
         int number;
         number = random.Next(0, 100);
+        return number;
+    }
+
+    static int getRandomID()
+    {
+        Random random = new Random();
+        int number;
+        number = random.Next(999, 1500);
         return number;
     }
 
@@ -73,10 +81,45 @@ public class Student
 
     }
 
+    public static void CreateIDs(List<string> ids, int n)
+    {
+        int count=0;
+        string piece="";
+
+        
+        while (count<n)
+        {
+            piece=getRandomID();
+            if (ids.Contains(piece)==false)
+            {
+                ids.Add(piece);
+                count++;
+            }
+        }
+    }
+
 }
 
 class Program
 {
+
+
+    static void DeleteStd(List<Student> studentLst,string studentName )
+    {
+        for (int i = 0; i < studentLst.Count; i++)
+        {
+            if (studentLst[i].name==studentName)
+            {
+                studentLst.RemoveAt(i);
+                Student.countr--;
+            }
+        }
+    }
+
+
+
+
+
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
@@ -92,7 +135,8 @@ class Program
 
         }
 
-
+        List<string> idList=new List<string>();
+        CreateIDs(idList,numOfstd);
         Student.showStudents(studLst);
         Console.WriteLine($"We have {Student.countr} Students");
         double avg = 0;
@@ -104,11 +148,7 @@ class Program
         avg = avg / 5;
         Console.WriteLine($"Average Grade is : {avg}");
 
-
-        for (int i = 0; i < studLst.Count; i++)
-        {
-
-        }
+        DeleteStd(studLst,"student0");
 
 
         var result = from x in studLst

@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oopStudents", "oopStudents.csproj", "{F402D286-069F-F864-C20B-2D5CD7535087}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triangleInequality", "triangleInequality.csproj", "{18ECF86A-F0C4-0E09-5D8C-962D2DD4C72D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F402D286-069F-F864-C20B-2D5CD7535087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F402D286-069F-F864-C20B-2D5CD7535087}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F402D286-069F-F864-C20B-2D5CD7535087}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F402D286-069F-F864-C20B-2D5CD7535087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18ECF86A-F0C4-0E09-5D8C-962D2DD4C72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18ECF86A-F0C4-0E09-5D8C-962D2DD4C72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18ECF86A-F0C4-0E09-5D8C-962D2DD4C72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18ECF86A-F0C4-0E09-5D8C-962D2DD4C72D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {46244C3F-2C08-4F85-9A09-ECE2BE0BDC65}
+		SolutionGuid = {52F96F9E-0397-4F9A-A32A-5408FA93AC38}
 	EndGlobalSection
 EndGlobal
