@@ -10,7 +10,11 @@ public class Student
     private string _faculty;
     private int _grade;
     public static int countr = 0;
+
     public string _studentID;
+
+
+
 
 
     static int getNum()
@@ -21,6 +25,7 @@ public class Student
         return number;
     }
 
+
     static int getRandomID()
     {
         Random random = new Random();
@@ -28,6 +33,8 @@ public class Student
         number = random.Next(999, 1500);
         return number;
     }
+
+
 
 
 
@@ -81,6 +88,7 @@ public class Student
 
     }
 
+
     public static void CreateIDs(List<string> ids, int n)
     {
         int count=0;
@@ -98,10 +106,13 @@ public class Student
         }
     }
 
+
+
 }
 
 class Program
 {
+
 
 
     static void DeleteStd(List<Student> studentLst,string studentName )
@@ -115,6 +126,8 @@ class Program
             }
         }
     }
+
+
 
 
 
@@ -135,8 +148,12 @@ class Program
 
         }
 
+
         List<string> idList=new List<string>();
         CreateIDs(idList,numOfstd);
+
+
+
         Student.showStudents(studLst);
         Console.WriteLine($"We have {Student.countr} Students");
         double avg = 0;
@@ -148,7 +165,15 @@ class Program
         avg = avg / 5;
         Console.WriteLine($"Average Grade is : {avg}");
 
+
         DeleteStd(studLst,"student0");
+
+
+        for (int i = 0; i < studLst.Count; i++)
+        {
+
+        }
+
 
 
         var result = from x in studLst
