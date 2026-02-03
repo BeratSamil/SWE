@@ -84,13 +84,5 @@ class Program
 
         double averageArea = rectangles.Average(r => r.Area());
         Console.WriteLine($"Average area of all rectangles: {averageArea}");
-
-
-    
-
-
-
-        
-        
     }
 }
