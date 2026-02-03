@@ -2,9 +2,9 @@
 
 public class Animal
 {
-    private string name;
-    private int cost;
-    private string breed;
+     private string name;
+     private int cost;
+     private string breed;
 
     public string Name
     {
